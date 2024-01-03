@@ -1,0 +1,11 @@
+.page{
+    display: flex;
+}
+
+#content{
+    width: 75%;
+}
+
+#sidebar{
+    width: 25%;
+}

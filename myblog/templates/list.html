@@ -12,7 +12,7 @@
     <div class="container-lg d-flex flex-column gap-2">
       <h2 class="fs-2 fw-semibold text-center"><a class="text-success" href="{% url 'blog:post_detail' post.id %}">{{ post.title }}</a></h2>
       <p class="date">
-        <b>Опубликовано</b>{{ post.publ }} Автор <b>{{ post.author }}</b>
+        <b>Опубликовано:</b> {{ post.publ }} Автор <b>{{ post.author }}</b>
         {{ post.text|truncatewords:30|linebreaks }}
       </p>
     </div>

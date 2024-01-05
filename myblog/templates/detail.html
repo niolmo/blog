@@ -1,0 +1,16 @@
+{% extends 'flatpages/base.html' %}
+{% load static %}
+
+{% block title %}
+  {{ post.title }}
+{% endblock %}
+
+{% block content %}
+  <div class="containel-lg px-3">
+    <h1 class="fs-2 fw-semibold text-center border-bottom border-2 border-opacity-50 text-success">{{ post.title }}</h1>
+    <p class="date fs-6 fw-normal">
+      <b>Опубликовано:</b> {{ post.publ }} Автор <b>{{ post.author }}</b>
+    </p>
+    <p class="fs-2 fw-normal">{{ post.text|linebreaks }}</p>
+  </div>
+{% endblock %}
